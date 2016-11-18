@@ -1,7 +1,8 @@
+var path = require('path');
 var webpack = require('webpack');  
 module.exports = {  
   entry: [
-    ".\\js\\app.js"
+    path.join(__dirname,'js','app.js')
   ],
   output: {
     path: __dirname + '/static',

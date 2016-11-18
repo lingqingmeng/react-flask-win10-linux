@@ -2,8 +2,16 @@
 </head>
 
 <body>
+  <div class="nav_title"></div>
   <div id="reactEntry"></div>
-
+  <div id="placeholder"></div>
+  <Router>
+    <Route path="/" component={App}>
+      <Route path="page1" component={Page1} />
+      <Route path="page2" component={Page2} />
+    </Route>
+    <Route path="/login" component={Login} />
+  </Router>
   <!-- Attach React components -->
   <script type="text/javascript" src="{{ url_for('static', filename='bundle.js') }}"></script>
 </body>

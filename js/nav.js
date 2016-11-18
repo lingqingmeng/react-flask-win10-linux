@@ -5,8 +5,9 @@ var Nav = React.createClass({
     return (
       <div>
         <ul>
-          <a onClick={() => history.push('page1') }>Page 1</a>
-          <a onClick={() => history.push('page2') }>Page 2</a>
+          <a href="https://www.google.com">Google</a>
+          <br/>
+          <a href="https://www.facebook.com">Facebook</a>
         </ul>
       </div>
     )
